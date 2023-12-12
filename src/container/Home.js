@@ -101,8 +101,8 @@ function Home() {
 
 {listimg.map((photo, index) => (
   <div key={index}>
-    <img src={photo.url} alt={`AI Image ${index}`} loading="lazy" />
-    <a href={photo.url} download={`AI_Image_${index}`} target="_blank">
+  <img src={photo.url} alt={`AI Image ${photo.id}`} loading="lazy" />
+  <a href={photo.url} download={`AI_Image_${photo.id}`} target="_blank">
       <FcDownload />
     </a>
   </div>
